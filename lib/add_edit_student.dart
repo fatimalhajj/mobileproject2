@@ -78,7 +78,7 @@ class _Add_Edit_StudentState extends State<Add_Edit_Student> {
                     ),
                     SizedBox(height: 10.0,),
                     MyTextFields(
-                      hintedtext: "Example@gmail.com",
+                      hintedtext: "name@gmail.com",
                       labeltext: "Email",
                       inputcontroller: Email,
                     ),
