@@ -8,7 +8,6 @@ import 'model.dart';
 
 class StudentController{
 
-  static const VIEW_URL = "https://green-eyed-mothers.000webhostapp.com/view.php";
   static const CREATE_URL = "https://green-eyed-mothers.000webhostapp.com/create.php";
   static const DELETE_URL = "https://green-eyed-mothers.000webhostapp.com/delete.php";
   static const UPDATE_URL = "https://green-eyed-mothers.000webhostapp.com/update.php";
@@ -21,7 +20,7 @@ class StudentController{
 
   Future<List<studentModel>> getStudents() async {
     String view_ip = "https://green-eyed-mothers.000webhostapp.com/view.php";
-    final response = await http.get(Uri.parse(VIEW_URL));
+    final response = await http.get(Uri.parse(view_ip));
     if(response.statusCode == 200){
       List<studentModel> list = studentFromJson(response.body);
       return list;
